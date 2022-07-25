@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cases",
+  "info": {
+    "singularName": "case",
+    "pluralName": "cases",
+    "displayName": "case",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "money": {
+      "type": "decimal"
+    },
+    "income": {
+      "type": "decimal"
+    },
+    "outcome": {
+      "type": "decimal"
+    }
+  }
+}

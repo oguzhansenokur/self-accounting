@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sells",
+  "info": {
+    "singularName": "sell",
+    "pluralName": "sells",
+    "displayName": "sell",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sell_price": {
+      "type": "decimal"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "sells"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

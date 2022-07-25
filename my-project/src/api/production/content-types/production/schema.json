@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productions",
+  "info": {
+    "singularName": "production",
+    "pluralName": "productions",
+    "displayName": "production",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "productions"
+    },
+    "production_price": {
+      "type": "decimal"
+    },
+    "production_amount": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}
